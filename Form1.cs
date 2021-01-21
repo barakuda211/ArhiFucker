@@ -45,5 +45,11 @@ namespace ArhiFucker
             var f = new HardDiskForm();
             f.Show();
         }
+
+        private void button_tasks_Click(object sender, EventArgs e)
+        {
+            var f = new TasksForm();
+            f.Show();
+        }
     }
 }

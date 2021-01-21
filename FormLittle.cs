@@ -83,5 +83,10 @@ namespace ArhiFucker
 
             textBox_res.Text = res;
         }
+
+        private void FormLittle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

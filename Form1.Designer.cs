@@ -34,6 +34,7 @@ namespace ArhiFucker
             this.button_mips = new System.Windows.Forms.Button();
             this.button_littlebig = new System.Windows.Forms.Button();
             this.button_hdd = new System.Windows.Forms.Button();
+            this.button_tasks = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_cache
@@ -58,7 +59,7 @@ namespace ArhiFucker
             // 
             // button_mips
             // 
-            this.button_mips.Location = new System.Drawing.Point(13, 161);
+            this.button_mips.Location = new System.Drawing.Point(12, 201);
             this.button_mips.Name = "button_mips";
             this.button_mips.Size = new System.Drawing.Size(211, 31);
             this.button_mips.TabIndex = 2;
@@ -85,11 +86,22 @@ namespace ArhiFucker
             this.button_hdd.UseVisualStyleBackColor = true;
             this.button_hdd.Click += new System.EventHandler(this.button_hdd_Click);
             // 
+            // button_tasks
+            // 
+            this.button_tasks.Location = new System.Drawing.Point(12, 164);
+            this.button_tasks.Name = "button_tasks";
+            this.button_tasks.Size = new System.Drawing.Size(211, 31);
+            this.button_tasks.TabIndex = 5;
+            this.button_tasks.Text = "Задания в пакетном режиме";
+            this.button_tasks.UseVisualStyleBackColor = true;
+            this.button_tasks.Click += new System.EventHandler(this.button_tasks_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(236, 340);
+            this.Controls.Add(this.button_tasks);
             this.Controls.Add(this.button_hdd);
             this.Controls.Add(this.button_littlebig);
             this.Controls.Add(this.button_mips);
@@ -109,6 +121,7 @@ namespace ArhiFucker
         private System.Windows.Forms.Button button_mips;
         private System.Windows.Forms.Button button_littlebig;
         private System.Windows.Forms.Button button_hdd;
+        private System.Windows.Forms.Button button_tasks;
     }
 }
 

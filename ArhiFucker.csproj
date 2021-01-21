@@ -78,6 +78,12 @@
     <Compile Include="RealBinForm.Designer.cs">
       <DependentUpon>RealBinForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TasksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TasksForm.Designer.cs">
+      <DependentUpon>TasksForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CacheForm.resx">
       <DependentUpon>CacheForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="RealBinForm.resx">
       <DependentUpon>RealBinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TasksForm.resx">
+      <DependentUpon>TasksForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

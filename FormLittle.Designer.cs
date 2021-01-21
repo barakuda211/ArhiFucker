@@ -142,6 +142,7 @@ namespace ArhiFucker
             this.Controls.Add(this.textBox_sizebit);
             this.Name = "FormLittle";
             this.Text = "Прямой, обратный порядок байтов";
+            this.Load += new System.EventHandler(this.FormLittle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
