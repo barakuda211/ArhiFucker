@@ -28,8 +28,10 @@ namespace ArhiFucker
             return ReverseString(res);
         }
 
-        private string ReverseString(string input) => new string(input.ToCharArray().Reverse().ToArray());
-
+        private string ReverseString(string input)
+        {
+            return new string(input.ToCharArray().Reverse().ToArray());
+        }
 
         private void button_solve_Click(object sender, EventArgs e)
         {

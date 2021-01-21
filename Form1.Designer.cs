@@ -63,7 +63,7 @@ namespace ArhiFucker
             this.button_mips.Name = "button_mips";
             this.button_mips.Size = new System.Drawing.Size(211, 31);
             this.button_mips.TabIndex = 2;
-            this.button_mips.Text = "MIPS в двоичное число";
+            this.button_mips.Text = "MIPS в двоичное число (ниработаит(((()";
             this.button_mips.UseVisualStyleBackColor = true;
             // 
             // button_littlebig

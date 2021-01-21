@@ -130,6 +130,7 @@ namespace ArhiFucker
             this.Controls.Add(this.textBox_int);
             this.Name = "RealBinForm";
             this.Text = "RealBinForm";
+            this.Load += new System.EventHandler(this.RealBinForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

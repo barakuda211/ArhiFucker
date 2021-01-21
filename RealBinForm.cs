@@ -17,7 +17,10 @@ namespace ArhiFucker
             InitializeComponent();
         }
 
-        private string ReverseString(string input) => new string(input.ToCharArray().Reverse().ToArray());
+        private string ReverseString(string input)
+        {
+            return new string(input.ToCharArray().Reverse().ToArray());
+        }
 
         private string ToBin(int n)
         {
@@ -47,13 +50,15 @@ namespace ArhiFucker
             return res;
         }
 
-        private (int, int) SplitDouble(double w)
+        private Tuple<int, int> SplitDouble(double w)
         {
             string s = w.ToString();
             var parts = s.Split(new char[] { '.', ',' });
             if (parts.Length == 1)
-                return (int.Parse(parts[0]), 0);
-            return (int.Parse(parts[0]), int.Parse(parts[1]));
+                //return (int.Parse(parts[0]), 0);
+                return new Tuple<int, int>(int.Parse(parts[0]), 0);
+            //return (int.Parse(parts[0]), int.Parse(parts[1]));
+            return new Tuple<int, int>(int.Parse(parts[0]), int.Parse(parts[1]));
         }
 
         private void button_solve_Click(object sender, EventArgs e)
@@ -76,7 +81,8 @@ namespace ArhiFucker
                 return;
             }
 
-            (int wa, int wb) = SplitDouble(w);
+            var tuple = SplitDouble(w);
+            int wa = tuple.Item1, wb = tuple.Item2;
 
             string sa = ToBin(wa);
             if (sa.Length > a)
@@ -91,6 +97,11 @@ namespace ArhiFucker
 
             string sw = MantToBin(w - wa,b);
             textBox_res.Text = sa + sw;
+        }
+
+        private void RealBinForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
