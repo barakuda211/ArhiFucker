@@ -76,6 +76,8 @@ namespace ArhiFucker
             // checkBox
             // 
             this.checkBox.AutoSize = true;
+            this.checkBox.Checked = true;
+            this.checkBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox.Location = new System.Drawing.Point(141, 81);
             this.checkBox.Name = "checkBox";
             this.checkBox.Size = new System.Drawing.Size(122, 17);
